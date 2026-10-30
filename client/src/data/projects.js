@@ -3,10 +3,10 @@ export const projects = [
   {
     id: 'writive-ai',
     name: 'Writive AI',
-    category: 'AI Writing Tool',
+    category: 'AI Note Writing Tool',
     status: 'In Progress',
     description: 'An AI-assisted writing workspace. (Placeholder description: edit me.)',
-    stack: ['React.js', 'Node.js', 'Express.js', 'Python'],
+    stack: ['Next.js', 'React.js', 'Node.js', 'Express.js', 'Python', 'Langchain'],
     live: '',
     source: '',
     caseStudy: {
