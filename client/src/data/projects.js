@@ -1,0 +1,48 @@
+
+export const projects = [
+  {
+    id: 'writive-ai',
+    name: 'Writive AI',
+    category: 'AI Writing Tool',
+    status: 'In Progress',
+    description: 'An AI-assisted writing workspace. (Placeholder description: edit me.)',
+    stack: ['React.js', 'Node.js', 'Express.js', 'Python'],
+    live: '',
+    source: '',
+    caseStudy: {
+      problem: 'Placeholder: describe the writing problem this project addresses.',
+      solution: 'Placeholder: describe the intended solution and core features.',
+      approach: 'Placeholder: describe how you designed and implemented it, from Figma prototype to API.',
+    },
+  },
+  {
+    id: 'lead-management',
+    name: 'AI Lead Management System',
+    category: 'Full-Stack Application',
+    status: 'Concept',
+    description: 'A lead tracking tool with AI-assisted scoring. (Placeholder: edit me.)',
+    stack: ['React.js', 'Express.js', 'MongoDB', 'scikit-learn'],
+    live: '',
+    source: '',
+  },
+  {
+    id: 'play-music',
+    name: 'Play Music',
+    category: 'Frontend Application',
+    status: 'In Progress',
+    description: 'A music player interface. (Placeholder: edit me.)',
+    stack: ['React.js', 'Tailwind CSS'],
+    live: '',
+    source: '',
+  },
+  {
+    id: 'realtime-chat',
+    name: 'Real-Time Chat Application',
+    category: 'Full-Stack Application',
+    status: 'Concept',
+    description: 'A real-time messaging app. (Placeholder: edit me.)',
+    stack: ['React.js', 'Node.js', 'MongoDB'],
+    live: '',
+    source: '',
+  },
+];
