@@ -11,8 +11,12 @@ function Preview({ index }) {
   );
 }
 
-function Link({ href, label }) {
-  return href ? <a className="link-line" href={href} target="_blank" rel="noreferrer">{label} ↗</a> : null;
+function ProjectAction({ href, label }) {
+  if (href) {
+    return <a className="project-action" href={href} target="_blank" rel="noreferrer">{label} <span aria-hidden="true">↗</span></a>;
+  }
+
+  return <span className="project-action project-action-disabled" aria-disabled="true">{label} <span className="normal-case tracking-normal">Coming soon</span></span>;
 }
 
 export default function Projects() {
@@ -42,16 +46,9 @@ export default function Projects() {
                     <div>
                       <p className="mx-auto max-w-xl text-lg md:mx-0">{p.description}</p>
                       <p className="label mt-5">{p.stack.join(' / ')}</p>
-                      {p.caseStudy && (
-                        <dl className="mt-8 grid gap-5 text-sm text-stone">
-                          {[['Problem', p.caseStudy.problem], ['Solution', p.caseStudy.solution], ['Approach', p.caseStudy.approach]].map(([k, v]) => (
-                            <div key={k}><dt className="label-amber">{k}</dt><dd className="mx-auto mt-1 max-w-xl md:mx-0">{v}</dd></div>
-                          ))}
-                        </dl>
-                      )}
-                      <div className="mt-8 flex flex-wrap justify-center gap-6 md:justify-start">
-                        <Link href={p.live} label="Live demo" />
-                        <Link href={p.source} label="Source" />
+                      <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:justify-center md:justify-start">
+                        <ProjectAction href={p.live} label="Live Project" />
+                        <ProjectAction href={p.source} label="GitHub" />
                       </div>
                     </div>
                   </div>

@@ -1,7 +1,7 @@
 import {
   SiHtml5, SiCss3, SiJavascript, SiReact, SiNextdotjs, SiTailwindcss, SiNodedotjs, SiExpress,
   SiMongodb, SiMysql, SiFigma, SiFramer, SiAdobeillustrator, SiPython, SiNumpy, SiPandas,
-  SiScikitlearn, SiLangchain, SiC, SiLinux, SiGnubash,
+  SiScikitlearn, SiLangchain, SiC, SiLinux, SiGnubash, SiGit, SiGithub,
 } from 'react-icons/si';
 import { FaJava } from 'react-icons/fa';
 
@@ -37,6 +37,8 @@ export const skillCategories = [
   { id: 'systems', title: 'Programming Languages and Systems', items: [
     { name: 'Java', icon: FaJava, color: '#ED8B00' },
     { name: 'C', icon: SiC, color: '#A8B9CC' },
+    { name: 'Git', icon: SiGit, color: '#F05032' },
+    { name: 'GitHub', icon: SiGithub, color: 'rgb(var(--ivory))' },
     { name: 'Linux OS', icon: SiLinux, color: '#FCC624' },
     { name: 'Shell scripting', icon: SiGnubash, color: '#4EAA25' },
   ] },
